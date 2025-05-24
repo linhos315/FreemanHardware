@@ -137,6 +137,35 @@ main {
 .login{
     background-color: rgb(42, 23, 105);
 }
+
+.marquee-container {
+      overflow: hidden;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      position: relative;
+      box-shadow: 1px 1px 5px white;
+    }
+
+    .marquee-track {
+      display: flex;
+      width: fit-content;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    .marquee-track img {
+      height: 40px;
+      margin: 0 40px;
+    }
+
+    @keyframes scroll-left {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
 /* @media (min-width: 600px) {
   .primerInput{
     width: 85%;
