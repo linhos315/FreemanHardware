@@ -156,7 +156,60 @@ main {
       height: 40px;
       margin: 0 40px;
     }
+.bodyColorRegistro {
+    
+ min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #532d15, #b64009, #0f172a);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
 
+    }
+    .texto{
+      font-family: 'Rajdhani', sans-serif;
+
+
+    }
+
+    .encabezadoForm{
+     
+  font-family: 'Orbitron', sans-serif;
+    }
+    .form-container {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+      color: #fff;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    }
+
+    .form-control {
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+.form-control:focus {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(255, 165, 0, 0.7), 0 0 10px 4px rgba(75, 44, 32, 0.6);
+}
+    .btn-primary {
+      background: linear-gradient(90deg, #4b6cb7, #182848);
+      border: none;
+    }
+
+    .btn-dark:hover {
+      background: linear-gradient(90deg, #23242a, #e59664);
+    }
+
+    .form-label,
+    .form-check-label {
+      color: #ddd;
+    }
     @keyframes scroll-left {
       from {
         transform: translateX(0);
