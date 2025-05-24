@@ -129,6 +129,14 @@ main {
   }
 }
 
+.imagenFondo{
+    background-image: url(https://img.freepik.com/fotos-premium/fondo-degradado-azul-morado-copie-espacio-ilustracion_195501-2050.jpg);
+
+}
+
+.login{
+    background-color: rgb(42, 23, 105);
+}
 /* @media (min-width: 600px) {
   .primerInput{
     width: 85%;
