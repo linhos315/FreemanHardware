@@ -218,6 +218,19 @@ main {
         transform: translateX(-50%);
       }
     }
+    .product-card img {
+      height: 150px;
+      object-fit: cover;
+    }
+    .banner-img {
+      height: 100%;
+      object-fit: cover;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 50%;
+    }
 
 .carruselImg{
     height: auto;
