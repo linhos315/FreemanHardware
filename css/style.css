@@ -219,14 +219,34 @@ main {
       }
     }
 
-/* @media (min-width: 600px) {
-  .primerInput{
-    width: 85%;
+.carruselImg{
+    height: auto;
+    background-size: cover;
+
+}
+/*Tablet */
+@media (max-width: 900px) {
+ .carruselImg{
+    height: 300px;
+    object-fit: cover;
+    
+ }
+}
+
+/* dispositivos lg*/
+
+@media  (max-width : 1500px) {
+  .carruselImg{
+   height: 400px;
+    
   }
 }
 
-@media (max-width: 991px){
-    .primerInput{
-        width: 90%;
-    }
-} */
+/*dispositivos celulares*/
+
+@media  (max-width : 600px) {
+  .carruselImg{
+    height: 200px;
+    object-fit: cover;
+  }
+}
