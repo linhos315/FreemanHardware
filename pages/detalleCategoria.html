@@ -18,59 +18,304 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Freeman Hardware</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbarCustom p-4">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logotipo</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              src="../img/loguito de nav.jpg"
+              alt="Logo de la empresa"
+              class="logoImagen"
+          /></a>
+          <form role="search" class="formSearch">
+            <input
+              type="search"
+              class="primerInput"
+              placeholder="Buscar Producto"
+              aria-label="search"
+            />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarFreemanHardware"
+              aria-controls="navbarFreemanHardware"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </form>
+          <div class="collapse navbar-collapse" id="navbarFreemanHardware">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Ingresá</a>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../pages/login.html"
+                  ><i class="bi bi-person-fill iconos"></i
+                ></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Carrito</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-cart iconos"></i
+                ></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#"
-                  >Sobre Nosotros</a
-                >
+                  ><i class="bi bi-telephone iconos"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="bi bi-people iconos"></i
+                ></a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar Productos"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section class="container">
+        <div class="row">
+        <article class="col-md-12 col-lg-4">
+          <div class="bannerContainer mt-4">
+            <a href="../pages/detalleCategoria.html">
+              <img
+                src="../img/videovertical.png"
+                alt="bannerCategoriaPlacadeVideo"
+                class="img-fluid bannerCat"
+              />
+            </a>
+          </div>
+        </article>
+        <section class="my-4 col-md-12 col-lg-8">
+          <article class="justify-content-md-center justify-content-lg-center row row-gap-3">
+            <div class="col-12 col-md-5 col-lg-4">
+              <div class="card shadow h-100">
+                <img
+                  src="https://mlx.com.ar/wp-content/uploads/Radeon-RX-7600-Steel-Legend-8GB-OCL1-1024x853.png"
+                  alt="PlacaDeVideoAMDRadeonRX7600"
+                  class="card-img-top img-fluid bg-white imgCatCard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">$460.000</h5>
+                  <p class="card-text">
+                    Placa de Video Gigabyte Radeon Rx 7600 Gaming OC 8 Gb
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="">
+                    <button class="btnCat">Comprar</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+              <div class="card shadow h-100">
+                <img
+                  src="https://es-store.msi.com/cdn/shop/files/1024_142a72d5-3cf8-4f9c-9fec-ab4cfbccbe61.png?v=1720563492&width=460"
+                  alt="PlacaDeVideoNVIDIARTX3050MSIVENTUS"
+                  class="card-img-top img-fluid bg-white imgCatCard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">$244.600</h5>
+                  <p class="card-text">
+                    Placa de Video MSI GeForce RTX 3050 6GB GDDR6 Ventus 2X OC
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="">
+                    <button class="btnCat">Comprar</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+              <div class="card shadow h-100">
+                <img
+                  src="https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-b50800q-10p-image01.jpg?itok=zSqPqrL2"
+                  alt="PlacaDeVideoNVIDIARTX5080ZOTAC"
+                  class="card-img-top img-fluid bg-white imgCatCard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">$1.850.000</h5>
+                  <p class="card-text">
+                    Placa de Video Zotac GeForce RTX 5080 16GB GDDR7 Solid OC
+                    White
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="">
+                    <button class="btnCat">Comprar</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+              <div class="card shadow h-100">
+                <img
+                  src="https://http2.mlstatic.com/D_NQ_NP_677516-MLA83374064237_032025-O.webp"
+                  alt="PlacaDeVideoNVIDIARTX5090ZOTAC"
+                  class="card-img-top img-fluid bg-white imgCatCard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">$4.120.000</h5>
+                  <p class="card-text">
+                    Placa de Video Geforce Rtx 5090 32Gb Zotac Amp Extreme Infinity
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="">
+                    <button class="btnCat">Comprar</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+              <div class="card shadow h-100">
+                <img
+                  src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_45125_Placa_de_Video_ASUS_TUF_GeForce_RTX_5070_Ti_16GB_GDDR7_Gaming_OC_f3be4954-grn.jpg"
+                  alt="PlacaDeVideoNVIDIARTX5070TI"
+                  class="card-img-top img-fluid bg-white imgCatCard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">$1.790.000</h5>
+                  <p class="card-text">
+                    Placa de Video ASUS TUF GeForce RTX 5070 Ti 16GB GDDR7 Gaming OC
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="">
+                    <button class="btnCat">Comprar</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+              <div class="card shadow h-100">
+                <img
+                  src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_46068_Placa_de_video_MSI_GeForce_RTX_5060_TI_16GB_GAMING_TRIO_OC_b4ccebd9-grn.jpg"
+                  alt="PlacaDeVideoNVIDIARTX5060TI"
+                  class="card-img-top img-fluid bg-white imgCatCard"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">$937.000</h5>
+                  <p class="card-text">
+                    Placa de video MSI GeForce RTX 5060 TI 16GB GAMING TRIO OC
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="">
+                    <button class="btnCat">Comprar</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+          </article>
+          <nav aria-label="NavegacionDePaginaFreemanHardware">
+            <ul class="pagination justify-content-center my-4">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="./detalleCategoria.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  <span class="sr-only">Siguiente</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </main>
+    <footer class="bgFooter border-top">
+      <section class="container p-4">
+        <article class="row row-gap-4 justify-content-md-end">
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="../index.html">
+              <img
+                src="../img/logofreemanhardware.png"
+                alt="logotipofreemanHardware"
+                class="imgLogoFooter"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <h5>Información</h5>
+            <ul class="list-unstyled">
+              <a
+                href="../pages/sobrenosotros.html"
+                class="text-decoration-none text-light-emphasis"
+                ><li class="textFooter">Sobre Nosotros</li></a
+              >
+              <a
+                href="../pages/contacto.html"
+                class="text-decoration-none text-light-emphasis"
+                ><li class="textFooter">Contacto</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <h5>Redes Sociales</h5>
+            <div class="d-flex d-inline align-items-baseline gap-4">
+              <div>
+                <a href="../pages/error404.html"
+                  ><i class="bi bi-facebook fs-3 logoFooterFB"></i>
+                </a>
+              </div>
+              <div>
+                <a href="../pages/error404.html">
+                  <i class="bi bi-instagram fs-3 logoFooterIG"></i>
+                </a>
+              </div>
+              <div>
+                <a href="../pages/error404.html">
+                  <i class="bi bi-twitter-x fs-3 logoFooterX"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            ¿Dónde Estamos?
+            <p class="mt-3">
+              Dirección: Gral. José María Paz 576, T4000 San Miguel de Tucumán,
+              Tucumán
+            </p>
+            <div class="d-flex d-inline gap-2">
+              <a href="../pages/error404.html"
+                ><i class="bi bi-whatsapp logoFooterWA"></i
+              ></a>
+              <p>0381 578-3030</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="marquee gap-5">
+        <ul class="marquee__content font-monospace">
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+        </ul>
+        <ul aria-hidden="true" class="marquee__content font-monospace">
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+        </ul>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
