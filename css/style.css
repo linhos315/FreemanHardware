@@ -168,6 +168,14 @@ main {
   font-family: 'Orbitron', sans-serif;
 
     }
+.imagenError{
+    height: 350px;
+    width: 400px;
+}
+.erroR {
+    background: linear-gradient(200deg, rgb(69, 9, 69),rgb(9, 12, 90),rgb(227, 8, 8), rgb(0, 122, 166));
+}
+
     .texto{
       font-family: 'Rajdhani', sans-serif;
 
