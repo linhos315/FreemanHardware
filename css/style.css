@@ -237,6 +237,88 @@ main {
     background-size: cover;
 
 }
+
+/* banners categorias */
+
+.bannerContainer {
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+.bannerCat {
+    height: 600px;
+    width: 700px;
+    object-fit: cover;
+    object-position: 0% 30%;
+    filter: grayscale(100%);
+    transform: scale(1);
+    transition: transform 600ms ease, filter 600ms ease;    
+}
+
+.bannerCat:hover {
+       filter: grayscale(0%);
+       transform: scale(1.05);
+}
+
+/* botones detalle categorias */
+
+.btnCat {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: orangered;
+    font-family: monospace;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+    transition: 600ms;
+
+    &:hover {
+        color: black;
+        text-shadow: 1px 1px 2px white;
+    }
+}
+
+/* boton paginacion categorias */
+
+.btnPagCat {
+
+    background-color: orangered;
+    color: white;
+
+
+    &:hover {
+        text-shadow: 1px 1px 2px white;
+ 
+    }
+}
+
+.btnPagCatActive {
+    background-color: orangered;
+    color: white;
+    text-shadow: 1px 1px 5px white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.pagination .page-link {
+  background-color: #1a1a1a; /* Fondo del botón */
+  color: #fff;               /* Texto del botón */
+  border-color: #333;        /* Borde */
+}
+
+.pagination .page-link:hover {
+  background-color: #333;
+  color: orangered;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: orangered; /* Activo (actual) */
+  border-color: orangered;
+  color: #fff;
+}
+
 /*Tablet */
 @media (max-width: 900px) {
  .carruselImg{
@@ -244,6 +326,13 @@ main {
     object-fit: cover;
     
  }
+
+.imgCatCard {
+    height: 150px;
+    object-fit: cover;
+}
+
+
 }
 
 /* dispositivos lg*/
@@ -253,6 +342,12 @@ main {
    height: 400px;
     
   }
+
+  .imgCatCard {
+    height: 250px;
+    object-fit: cover;
+}
+
 }
 
 /*dispositivos celulares*/
@@ -262,4 +357,10 @@ main {
     height: 200px;
     object-fit: cover;
   }
+.bannerCat {
+    height: 250px;
+    object-fit: cover;
+    object-position: 70% 21%; 
+}
+  
 }
