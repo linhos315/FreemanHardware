@@ -18,59 +18,220 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Freeman Hardware</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Freeman Hardware - Mouses</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbarCustom p-4">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logotipo</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              src="../img/loguito de nav.jpg"
+              alt="Logo de la empresa"
+              class="logoImagen"
+          /></a>
+          <form role="search" class="formSearch">
+            <input
+              type="search"
+              class="primerInput"
+              placeholder="Buscar Producto"
+              aria-label="search"
+            />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarFreemanHardware"
+              aria-controls="navbarFreemanHardware"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </form>
+          <div class="collapse navbar-collapse" id="navbarFreemanHardware">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Ingresá</a>
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../pages/login.html"
+                  ><i class="bi bi-person-fill iconos"></i
+                ></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Carrito</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contacto</a>
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-cart iconos"></i
+                ></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#"
-                  >Sobre Nosotros</a
-                >
+                  ><i class="bi bi-telephone iconos"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i class="bi bi-people iconos"></i
+                ></a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar Productos"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section class="container my-5">
+        <h2 class="mb-2">Detalle del Carrito</h2>
+        <article class="table-responsive">
+          <table class="table table-striped-columns">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Precio x Unidad</th>
+                <th>Cantidad</th>
+                <th>Importe</th>
+                <th>¿Eliminar?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    <img
+                      src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_41014_Procesador_AMD_Ryzen_9_9950X_5.7GHz_Turbo_AM5_-_No_incluye_cooler_805fed11-grn.jpg"
+                      alt="AMDRYZEN99950X"
+                      class="img-fluid imgCarrito"
+                    />
+                    <div>
+                      <span
+                        >Procesador AMD Ryzen 9 9950X 5.7GHz Turbo AM5 - No
+                        incluye cooler</span
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">$807.000</td>
+                <td class="text-center">1</td>
+                <td class="text-center">$807.000</td>
+                <td class="text-center">
+                  <button class="btnBorrar" title="Eliminar">&times;</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39524_Memoria_Patriot_DDR5_48GB__2x24GB__6000MHz_Viper_Elite_5_RGB_TUF_GAMING_CL36_AMD_EXPO___INTEL_XMP_3.0_8a3a23af-grn.jpg"
+                    alt="MEMORIARAMDDR5PATRIOTVIPERELITE5"
+                    class="img-fluid imgCarrito"
+                  />
+                  <div>
+                    <span
+                      >Memoria Patriot DDR5 48GB (2x24GB) 6000MHz Viper Elite 5
+                      RGB TUF GAMING CL36 AMD EXPO / INTEL XMP 3.0</span
+                    >
+                  </div>
+                </td>
+                <td class="text-center">$212.650</td>
+                <td class="text-center">1</td>
+                <td class="text-center">$212.650</td>
+                <td class="text-center">
+                  <button class="btnBorrar" title="Eliminar">&times;</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <div class="d-flex justify-content-between align-items-center mt-4 flex-wrap">
+          <h4>Total a pagar: <strong>$1.019,650</strong></h4>
+          <div class="mt-2">
+            <a
+              href="../pages/error404.html"
+              class="btnCarrito text-decoration-none me-2"
+              >Proceder a la compra</a
+            >
+            <a href="../index.html" class="btnCarrito text-decoration-none"
+              >Seguir comprando</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bgFooter border-top">
+      <section class="container p-4">
+        <article class="row row-gap-4 justify-content-md-end">
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="../index.html">
+              <img
+                src="../img/logofreemanhardware.png"
+                alt="logotipofreemanHardware"
+                class="imgLogoFooter"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <h5>Información</h5>
+            <ul class="list-unstyled">
+              <a
+                href="../pages/sobrenosotros.html"
+                class="text-decoration-none text-light-emphasis"
+                ><li class="textFooter">Sobre Nosotros</li></a
+              >
+              <a
+                href="../pages/contacto.html"
+                class="text-decoration-none text-light-emphasis"
+                ><li class="textFooter">Contacto</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <h5>Redes Sociales</h5>
+            <div class="d-flex d-inline align-items-baseline gap-4">
+              <div>
+                <a href="../pages/error404.html"
+                  ><i class="bi bi-facebook fs-3 logoFooterFB"></i>
+                </a>
+              </div>
+              <div>
+                <a href="../pages/error404.html">
+                  <i class="bi bi-instagram fs-3 logoFooterIG"></i>
+                </a>
+              </div>
+              <div>
+                <a href="../pages/error404.html">
+                  <i class="bi bi-twitter-x fs-3 logoFooterX"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            ¿Dónde Estamos?
+            <p class="mt-3">
+              Dirección: Gral. José María Paz 576, T4000 San Miguel de Tucumán,
+              Tucumán
+            </p>
+            <div class="d-flex d-inline gap-2">
+              <a href="../pages/error404.html"
+                ><i class="bi bi-whatsapp logoFooterWA"></i
+              ></a>
+              <p>0381 578-3030</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="marquee gap-5">
+        <ul class="marquee__content font-monospace">
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+        </ul>
+        <ul aria-hidden="true" class="marquee__content font-monospace">
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+        </ul>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"

@@ -381,6 +381,42 @@ main {
   color: #fff;
 }
 
+.imgCarrito {
+  max-width: 200px;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+.btnCarrito {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: orangered;
+    font-family: monospace;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+    transition: 600ms;
+
+    &:hover {
+      background-color: grey;
+      color: black;
+      text-shadow: 1px 1px 5px white;
+    }
+  }
+
+  .btnBorrar {
+    background-color: orangered;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    height: 30px;
+    width: 40px;
+    overflow: hidden;
+  }
+
 /*Tablet */
 @media (max-width: 900px) {
  .carruselImg{
