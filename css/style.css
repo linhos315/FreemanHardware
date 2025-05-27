@@ -9,7 +9,20 @@ body {
 main {
     flex-grow: 1;
 }
-
+.margenDerecha{
+    margin-left: 100px;
+}
+.margenPlaca{
+ 
+   margin-left: 200px;  
+}
+.margenNotebook{
+ 
+   margin-left: 300px;  
+}
+.margenMonitores{
+   margin-left: 450px;
+}
 
 .navbarCustom{
     background-color: #0C1214;
