@@ -328,13 +328,13 @@ main {
 }
 
 .imgCarrito {
-  height: 200px;
+  max-width: 200px;
   border-radius: 20px;
   object-fit: fill;
 }
 
 .btnCarrito {
-    padding: 10px;
+    padding: 5px;
     border: none;
     border-radius: 10px;
     background-color: orangered;
