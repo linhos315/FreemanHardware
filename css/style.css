@@ -23,6 +23,47 @@ main {
 .margenMonitores{
    margin-left: 450px;
 }
+.integrante-card {
+ 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+ 
+.integrante-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+ .quienesSomos{
+  background:linear-gradient(170deg, rgb(19, 3, 3), rgb(24, 142, 171), rgb(10, 37, 95)) ;
+ }
+
+.img-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .img-container img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #007bff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+      .card{
+      width: 20rem;
+    }
+
+
+@media (max-width: 576px) {
+  .img-container {
+    height: 180px;
+  }
+}
 
 .navbarCustom{
     background-color: #0C1214;
