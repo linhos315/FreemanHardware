@@ -81,43 +81,81 @@
       </nav>
     </header>
     <main>
-      <section class="container my-5"></section>
-      <h2 class="mb-2">Detalle del Carrito</h2>
-      <article>
-        <table class="table table-striped-columns table-responsive">
-          <thead>
-            <tr>
-              <th>Producto</th>
-              <th>Precio x Unidad</th>
-              <th>Cantidad</th>
-              <th>Importe</th>
-              <th>¿Eliminar?</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><div>
-                <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_41014_Procesador_AMD_Ryzen_9_9950X_5.7GHz_Turbo_AM5_-_No_incluye_cooler_805fed11-grn.jpg" alt="AMDRYZEN99950X" class="img-fluid">
-                <span>Procesador AMD Ryzen 9 9950X 5.7GHz Turbo AM5 - No incluye cooler</span>
-              </div></td>
-              <td>$807.000</td>
-              <td>1</td>
-              <td>$807.000</td>
-              <td><button class="btnBorrar" title="Eliminar">&times;</button></td>
-            </tr>
-            <tr>
-              <td>
-                <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39524_Memoria_Patriot_DDR5_48GB__2x24GB__6000MHz_Viper_Elite_5_RGB_TUF_GAMING_CL36_AMD_EXPO___INTEL_XMP_3.0_8a3a23af-grn.jpg" alt="MEMORIARAMDDR5PATRIOTVIPERELITE5" class="img-fluid">
-                <span>Memoria Patriot DDR5 48GB (2x24GB) 6000MHz Viper Elite 5 RGB TUF GAMING CL36 AMD EXPO / INTEL XMP 3.0</span></td>
-              <td>$212.650</td>
-              <td>1</td>
-              <td>$212.650</td>
-              <td><button class="btnBorrar" title="Eliminar">&times;</button></td>
-            </tr>
-          </tbody>
-        </table>
-
-      </article>
+      <section class="container my-5">
+        <h2 class="mb-2">Detalle del Carrito</h2>
+        <article>
+          <table class="table table-striped-columns table-responsive">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Precio x Unidad</th>
+                <th>Cantidad</th>
+                <th>Importe</th>
+                <th>¿Eliminar?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div>
+                    <img
+                      src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_41014_Procesador_AMD_Ryzen_9_9950X_5.7GHz_Turbo_AM5_-_No_incluye_cooler_805fed11-grn.jpg"
+                      alt="AMDRYZEN99950X"
+                      class="img-fluid imgCarrito"
+                    />
+                    <div>
+                      <span
+                        >Procesador AMD Ryzen 9 9950X 5.7GHz Turbo AM5 - No
+                        incluye cooler</span
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td class="text-center">$807.000</td>
+                <td class="text-center">1</td>
+                <td class="text-center">$807.000</td>
+                <td class="text-center">
+                  <button class="btnBorrar" title="Eliminar">&times;</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39524_Memoria_Patriot_DDR5_48GB__2x24GB__6000MHz_Viper_Elite_5_RGB_TUF_GAMING_CL36_AMD_EXPO___INTEL_XMP_3.0_8a3a23af-grn.jpg"
+                    alt="MEMORIARAMDDR5PATRIOTVIPERELITE5"
+                    class="img-fluid imgCarrito"
+                  />
+                  <div>
+                    <span
+                      >Memoria Patriot DDR5 48GB (2x24GB) 6000MHz Viper Elite 5
+                      RGB TUF GAMING CL36 AMD EXPO / INTEL XMP 3.0</span
+                    >
+                  </div>
+                </td>
+                <td class="text-center">$212.650</td>
+                <td class="text-center">1</td>
+                <td class="text-center">$212.650</td>
+                <td class="text-center">
+                  <button class="btnBorrar" title="Eliminar">&times;</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <div class="d-flex justify-content-between align-items-center mt-4">
+          <h4>Total a pagar: <strong>$1.019,650</strong></h4>
+          <div>
+            <a
+              href="../pages/error404.html"
+              class="btnCarrito text-decoration-none me-2"
+              >Proceder a la compra</a
+            >
+            <a href="../index.html" class="btnCarrito text-decoration-none"
+              >Seguir comprando</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bgFooter border-top">
       <section class="container p-4">
