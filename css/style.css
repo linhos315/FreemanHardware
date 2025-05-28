@@ -1,102 +1,99 @@
 /* Bajar Footer */
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
-
-.navbarCustom{
-    background-color: #0C1214;
+.navbarCustom {
+  background-color: #0c1214;
 }
 
-.formSearch{
-    width: 95%;
+.formSearch {
+  width: 95%;
 }
 
-.primerInput{
-    background-color: #fff;
-    border: 4px solid #0C1214;
-    width: 95%;
-    transition: 1s;
-    border-radius: 10px;
-    padding: 5px;
-    color: #000;
-    outline: none;
-    &:hover{
-        border: 4px solid #D7420D;
-    }
+.primerInput {
+  background-color: #fff;
+  border: 4px solid #0c1214;
+  width: 95%;
+  transition: 1s;
+  border-radius: 10px;
+  padding: 5px;
+  color: #000;
+  outline: none;
+  &:hover {
+    border: 4px solid #d7420d;
+  }
 }
 
-.logoImagen{
-    width: 70px;
-    object-fit: contain;
+.logoImagen {
+  width: 70px;
+  object-fit: contain;
 }
 
-
-.iconos{
-    font-size: 25px;
-    margin: 5px;
-    color: #fff;
+.iconos {
+  font-size: 25px;
+  margin: 5px;
+  color: #fff;
 }
 
 .bgFooter {
-    background-color: #181818;
-    border-radius: 0 30px 0 0;
+  background-color: #181818;
+  border-radius: 0 30px 0 0;
 }
 
-.imgLogoFooter
-{
-    height: 100px;
+.imgLogoFooter {
+  height: 100px;
 }
 
 .logoFooterFB {
-    color: white;
-    transition: 600ms ease;
+  color: white;
+  transition: 600ms ease;
 }
 
 .logoFooterIG {
-    color: white;
-    transition: 600ms ease;
+  color: white;
+  transition: 600ms ease;
 }
 
 .logoFooterX {
-    color: white;
-    transition: 600ms ease;
+  color: white;
+  transition: 600ms ease;
 }
 
 .logoFooterWA {
-    color: white;
-    transition: 600ms ease;
+  color: white;
+  transition: 600ms ease;
 }
 
 .logoFooterIG:hover {
-    color: rgb(255, 0, 55);
-    text-shadow: 1px 1px 10px rgb(255, 0, 55);
+  color: rgb(255, 0, 55);
+  text-shadow: 1px 1px 10px rgb(255, 0, 55);
 }
 
 .logoFooterFB:hover {
-    color: rgb(0, 14, 212);
-    text-shadow: 1px 1px 10px rgb(0, 14, 212);
+  color: rgb(0, 14, 212);
+  text-shadow: 1px 1px 10px rgb(0, 14, 212);
 }
 
 .logoFooterX:hover {
-    color: rgb(104, 104, 104);
-    text-shadow: 1px 1px 10px rgb(104, 104, 104);
+  color: rgb(104, 104, 104);
+  text-shadow: 1px 1px 10px rgb(104, 104, 104);
 }
 
 .logoFooterWA:hover {
-    color: rgb(0, 212, 71);
-    text-shadow: 1px 1px 10px rgb(0, 212, 71) ;
+  color: rgb(0, 212, 71);
+  text-shadow: 1px 1px 10px rgb(0, 212, 71);
 }
 
 .textFooter:hover {
-    text-shadow: 1px 1px 10px white;
+  text-shadow: 1px 1px 10px white;
 }
 
 /* Marquee styles */
@@ -118,8 +115,6 @@ main {
   animation: scroll 10s linear infinite;
 }
 
-
-
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -129,123 +124,116 @@ main {
   }
 }
 
-.imagenFondo{
-    background-image: url(https://img.freepik.com/fotos-premium/fondo-degradado-azul-morado-copie-espacio-ilustracion_195501-2050.jpg);
-
+.imagenFondo {
+  background-image: url(https://img.freepik.com/fotos-premium/fondo-degradado-azul-morado-copie-espacio-ilustracion_195501-2050.jpg);
 }
 
-.login{
-    background-color: rgb(42, 23, 105);
+.login {
+  background-color: rgb(42, 23, 105);
 }
 
 .marquee-container {
-      overflow: hidden;
-      background-color: #f8f9fa;
-      padding: 10px 0;
-      position: relative;
-      box-shadow: 1px 1px 5px white;
-    }
+  overflow: hidden;
+  background-color: #f8f9fa;
+  padding: 10px 0 ;
+  position: relative;
+  box-shadow: 1px 1px 5px white;
+}
 
-    .marquee-track {
-      display: flex;
-      width: fit-content;
-      animation: scroll-left 10s linear infinite;
-    }
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 10s linear infinite;
+}
 
-    .marquee-track img {
-      height: 40px;
-      margin: 0 40px;
-    }
+.marquee-track img {
+  height: 40px;
+  margin: 0 40px;
+}
 .bodyColorRegistro {
-    
- min-height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   background: linear-gradient(180deg, #532d15, #b64009, #0f172a);
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
+}
+.texto {
+  font-family: "Rajdhani", sans-serif;
+}
 
-    }
-    .texto{
-      font-family: 'Rajdhani', sans-serif;
+.encabezadoForm {
+  font-family: "Orbitron", sans-serif;
+}
+.form-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
 
-
-    }
-
-    .encabezadoForm{
-     
-  font-family: 'Orbitron', sans-serif;
-    }
-    .form-container {
-      background-color: rgba(0, 0, 0, 0.85);
-      padding: 30px;
-      border-radius: 15px;
-      color: #fff;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-    }
-
-    .form-control {
-      background-color: #f8f9fa;
-      color: #212529;
-    }
+.form-control {
+  background-color: #f8f9fa;
+  color: #212529;
+}
 
 .form-control:focus {
   background-color: #ffffff;
   border: 1px solid transparent;
   outline: none;
-  box-shadow: 0 0 5px 2px rgba(255, 165, 0, 0.7), 0 0 10px 4px rgba(75, 44, 32, 0.6);
+  box-shadow: 0 0 5px 2px rgba(255, 165, 0, 0.7),
+    0 0 10px 4px rgba(75, 44, 32, 0.6);
 }
-    .btn-primary {
-      background: linear-gradient(90deg, #4b6cb7, #182848);
-      border: none;
-    }
+.btn-primary {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  border: none;
+}
 
-    .btn-dark:hover {
-      background: linear-gradient(90deg, #23242a, #e59664);
-    }
+.btn-dark:hover {
+  background: linear-gradient(90deg, #23242a, #e59664);
+}
 
-    .form-label,
-    .form-check-label {
-      color: #ddd;
-    }
-    @keyframes scroll-left {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
-    }
+.form-label,
+.form-check-label {
+  color: #ddd;
+}
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 .carruselImg{
     height: auto;
-    background-size: cover;
+    
 
 }
 /*Tablet */
 @media (max-width: 900px) {
- .carruselImg{
+  .carruselImg {
     height: 300px;
     object-fit: cover;
-    
- }
+  }
 }
 
 /* dispositivos lg*/
 
-@media  (max-width : 1500px) {
-  .carruselImg{
-   height: 400px;
-    
+@media (max-width: 1500px) {
+  .carruselImg {
+    height: 400px;
   }
 }
 
 /*dispositivos celulares*/
 
-@media  (max-width : 600px) {
-  .carruselImg{
+@media (max-width: 600px) {
+  .carruselImg {
     height: 200px;
     object-fit: cover;
   }
