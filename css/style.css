@@ -367,7 +367,7 @@ main {
 .bannerCat {
   height: 600px;
   width: 700px;
-  object-fit: cover;
+  object-fit: fill;
   object-position: 0% 30%;
   filter: grayscale(100%);
   transform: scale(1);
@@ -555,6 +555,13 @@ main {
     height: 150px;
     object-fit: cover;
   }
+
+  .bannerCat {
+  height: 400px;
+  width: 700px;
+  object-fit: cover;
+  object-position: 70% 18%;
+}
 }
 
 /* dispositivos lg*/
@@ -598,12 +605,15 @@ main {
   object-fit: contain;
 }
 
-}
 .bannerCat {
-  height: 250px;
-  object-fit: cover;
+  height: 600px;
+  width: 450px;
+  object-fit: fill;
   object-position: 70% 21%;
 }
+
+}
+
 
 .logoImagen {
   width: 90px;
