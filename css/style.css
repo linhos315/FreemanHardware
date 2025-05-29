@@ -1,9 +1,14 @@
+/* font del sitio */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Han+Sans&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Playwrite+DK+Loopet:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+
 /* Bajar Footer */
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -303,8 +308,15 @@ main {
 .btn-primary {
   background: linear-gradient(90deg, #4b6cb7, #182848);
   border: none;
-}
+  transition: 300ms ease;
 
+  &:hover {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: -1px 1px 10px white;
+  }
+
+}
+w
 .btn-dark:hover {
   background: linear-gradient(90deg, #23242a, #e59664);
 }
@@ -458,11 +470,20 @@ main {
   border: 5px solid #63a0fd;
   border-left: 5px solid #0d6efd;
   border-right: 5px solid #0d6efd;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+
 }
 
 .imgDetalleProducto {
   width: 100%;
   max-width: 400px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.borderDivLine {
+  border: 1px solid;
+  color: #ffffff;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
 .navbarCustom {
