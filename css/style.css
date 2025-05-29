@@ -454,6 +454,11 @@ main {
   }
 }
 
+.shadowCarrito {
+  border: 1px solid #182848;
+      box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.8);
+}
+
 .btnBorrar {
   background: linear-gradient(90deg, #4b6cb7, #182848);
   color: white;
