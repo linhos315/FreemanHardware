@@ -46,14 +46,72 @@ main {
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #007bff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid #dfe4ea;
+  box-shadow: 0 4px 10px rgba(92, 76, 76, 0.1);
 }
-
+/*
 .cardQuienes {
   width: 20rem;
+} */
+ .cardQuienes {
+  background: linear-gradient(145deg, #1d045b, #1f0441); /* Degradado oscuro */
+  color: #ffffff; /* Letras claras */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* Brillo neón suave */
+  transition: all 0.3s ease-in-out;
 }
 
+.cardQuienes:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.3); /* Más brillo al pasar el mouse */
+  transform: translateY(-5px);
+}
+
+/* Sombra en la imagen dentro de la tarjeta */
+.img-container img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(71, 152, 152, 0.4);
+}
+
+/* Textos internos */
+.cardQuienes .card-title,
+.cardQuienes .card-subtitle,
+.cardQuienes .card-text,
+.cardQuienes blockquote,
+.cardQuienes small {
+  color: #ffffff;
+  text-shadow: 0 0 3px #00ffff;
+}
+
+/* Botones */
+.cardQuienes .btn-outline-primary {
+  border-color: #00ffff;
+  color: #00ffff;
+}
+
+.cardQuienes .btn-outline-primary:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.cardQuienes .btn-outline-dark {
+  border-color: #9b7878;
+  color: #dfd3d3;
+}
+
+.cardQuienes .btn-outline-dark:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.cardQuienes .btn-outline-primary:focus,
+.cardQuienes .btn-outline-dark:focus {
+  outline: none;
+  box-shadow: 0 0 10px #000; /* brillo oscuro alrededor */
+  background-color: #111;    /* fondo oscuro en focus */
+  color: #00ffff;            /* texto neón */
+  border-color: #000;
+}
 
 
 /* color principal del index */
