@@ -21,59 +21,80 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Detalle - NVIDIA RTX 5070</title>
   </head>
-  <body>
+  <body class="colorPrincipal">
     <header>
-      <nav class="navbar navbar-expand-lg navbarCustom p-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"
-            ><img
+      <nav class="navbar navbar-expand-lg navbarCustom p-3">
+        <div class="container-fluid d-flex flex-wrap align-items-center">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="../index.html">
+            <img
               src="../img/loguito de nav.jpg"
-              alt="Logo de la empresa"
+              alt="Logo de Freeman Hardware"
               class="logoImagen"
-          /></a>
-          <form role="search" class="formSearch">
-            <input
-              type="search"
-              class="primerInput"
-              placeholder="Buscar Producto"
-              aria-label="search"
             />
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarFreemanHardware"
-              aria-controls="navbarFreemanHardware"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+          </a>
+
+          <!-- BOTON HAMBURGUESA-->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarFreemanHardware"
+            aria-controls="navbarFreemanHardware"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse mt-3 mt-lg-0"
+            id="navbarFreemanHardware"
+          >
+            <!-- BARRRA DE BUSQUEDA -->
+            <form role="search" class="navdeBusqueda mb-3 mb-lg-0">
+              <input
+                type="search"
+                class="primerInput"
+                placeholder="Buscar Producto"
+                aria-label="search"
+              />
+            </form>
+
+            <!-- ICONOS -->
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 d-flex flex-row flex-nowrap iconosResponsive"
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </form>
-          <div class="collapse navbar-collapse" id="navbarFreemanHardware">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="../pages/login.html"
-                  ><i class="bi bi-person-fill iconos"></i
-                ></a>
+                <a class="nav-link" href="../pages/login.html">
+                  <i class="bi bi-person-fill iconos"></i>
+                </a>
+              </li>
+              <div>
+                <div
+                  class="position-relative d-inline-block text-decoration-none list-unstyled"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/detalleCarrito.html">
+                      <i class="bi bi-cart-fill iconos"></i
+                    ></a>
+                  </li>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    2
+                    <span class="visually-hidden">productos en el carrito</span>
+                  </span>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">
+                  <i class="bi bi-telephone iconos"></i>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="bi bi-cart iconos"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"
-                  ><i class="bi bi-telephone iconos"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"
-                  ><i class="bi bi-people iconos"></i
-                ></a>
+                <a class="nav-link" href="../pages/sobrenosotros.html">
+                  <i class="bi bi-people iconos"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -84,29 +105,63 @@
       <section class="container my-5">
         <article class="row">
           <div class="col-12 col-md-5">
-            <div class="overflow-hidden">
-            <img src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_45125_Placa_de_Video_ASUS_TUF_GeForce_RTX_5070_Ti_16GB_GDDR7_Gaming_OC_f3be4954-grn.jpg" alt="PLACAVIDEONVIDIARTX5070TI" class="img-fluid imgDetalleProducto rounded-3 shadow">
+            <div>
+              <img
+                src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_45125_Placa_de_Video_ASUS_TUF_GeForce_RTX_5070_Ti_16GB_GDDR7_Gaming_OC_f3be4954-grn.jpg"
+                alt="PLACAVIDEONVIDIARTX5070TI"
+                class="img-fluid imgDetalleProducto rounded-3"
+              />
+            </div>
           </div>
-          </div>
-          <div class="col-12 col-md-7">
-            <h2>Placa de Video ASUS TUF GeForce RTX 5070 Ti 16GB GDDR7 Gaming OC</h2>
+          <div class="col-12 col-md-7 mt-3">
+            <h2>
+              Placa de Video ASUS TUF GeForce RTX 5070 Ti 16GB GDDR7 Gaming OC
+            </h2>
             <h4>$1.790.000</h4>
-            <p>La GeForce RTX 5070 Ti es una tarjeta gráfica potente con un precio competitivo que ofrece un excelente rendimiento en juegos a 1440p y 4K</p>
+            <p>
+              La GeForce RTX 5070 Ti es una tarjeta gráfica potente con un
+              precio competitivo que ofrece un excelente rendimiento en juegos a
+              1440p y 4K
+            </p>
             <a href="./detalleCarrito.html" class="btn btn-primary">Comprar</a>
-            <div class="mt-4 bg-info-subtle border"></div>
+            <div class="d-flex d-inline-block mt-5">
+              <div>
+              <img src="https://www.venex.com.ar/images/cards_list_front.png?dd=ddd2" alt="TarjetasVISAMASTERCARDAMERICANEXPRESSMERCADOPAGO" class="img-fluid imgMetodoPago"></div></div>
+            <div class="mt-4 borderDivLine"></div>
+            <h5 class="mt-4 fw-bolder colorDesProd">Descripción:</h5>
+            <ul class="list-unstyled">
+              <li class="mt-1"> Lo que tenés que saber:</li>
+              <li class="mt-1"> <strong>Memoria VRAM:</strong> 12GB</li>
+              <li class="mt-1"> <strong>Tipo de Memoria:</strong> GDDR7</li>
+              <li class="mt-1"> <strong>Conexión a Fuente:</strong> 8 Pines</li>
+              <li class="mt-1"> <strong>Núcleos CUDA:</strong> 4032</li>
+              <li class="mt-1"> <strong>Frecuencia de Reloj:</strong> 2550MHz</li>
+              <li class="mt-1"> <strong>Iluminación:</strong> Sin Iluminación</li>
+              <li class="mt-1"> <strong>Software:</strong> ASUS GPU Tweak III </li>
+              <li class="mt-1"> <strong>Tamaño:</strong> 304mm</li>
+              <li class="mt-1"> <strong>Puertos de Video:</strong> HDMI x1, DisplayPort x2, VGA x1</li>
+              <li class="mt-1"> <strong>Versión PCIe:</strong> PCIe 5.0</li>
+              <li class="mt-1"> <strong>Bits:</strong> 256</li>
+            </ul>
+            <div class="mt-4 borderDivLine"></div>
             <h5 class="mt-4 fw-bolder">Comentarios de usuarios</h5>
-        <div class="cajaComentarios px-2 my-3">
-          <strong>Lucas M.:</strong>
-          <p>Excelente rendimiento en todos mis juegos. Silenciosa y potente.</p>
-        </div>
-        <div class="cajaComentarios px-2 my-3">
-          <strong>Ana G.:</strong>
-          <p>Una gran mejora respecto a mi antigua GTX. Recomendada totalmente.</p>
-        </div>
-        <div class="cajaComentarios px-2 my-3">
-          <strong>Pedro R.:</strong>
-          <p>Calidad-precio de lo mejor que hay ahora mismo.</p>
-        </div>
+            <div class="cajaComentarios px-2 my-3">
+              <strong>Lucas M.:</strong>
+              <p>
+                Excelente rendimiento en todos mis juegos. Silenciosa y potente.
+              </p>
+            </div>
+            <div class="cajaComentarios px-2 my-3">
+              <strong>Ana G.:</strong>
+              <p>
+                Una gran mejora respecto a mi antigua GTX. Recomendada
+                totalmente.
+              </p>
+            </div>
+            <div class="cajaComentarios px-2 my-3">
+              <strong>Pedro R.:</strong>
+              <p>Calidad-precio de lo mejor que hay ahora mismo.</p>
+            </div>
           </div>
         </article>
       </section>

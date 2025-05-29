@@ -21,59 +21,80 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Freeman Hardware</title>
   </head>
-  <body>
+  <body class="colorPrincipal">
     <header>
-      <nav class="navbar navbar-expand-lg navbarCustom p-4">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"
-            ><img
+      <nav class="navbar navbar-expand-lg navbarCustom p-3">
+        <div class="container-fluid d-flex flex-wrap align-items-center">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="../index.html">
+            <img
               src="../img/loguito de nav.jpg"
-              alt="Logo de la empresa"
+              alt="Logo de Freeman Hardware"
               class="logoImagen"
-          /></a>
-          <form role="search" class="formSearch">
-            <input
-              type="search"
-              class="primerInput"
-              placeholder="Buscar Producto"
-              aria-label="search"
             />
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarFreemanHardware"
-              aria-controls="navbarFreemanHardware"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+          </a>
+
+          <!-- BOTON HAMBURGUESA-->
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarFreemanHardware"
+            aria-controls="navbarFreemanHardware"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse mt-3 mt-lg-0"
+            id="navbarFreemanHardware"
+          >
+            <!-- BARRRA DE BUSQUEDA -->
+            <form role="search" class="navdeBusqueda mb-3 mb-lg-0">
+              <input
+                type="search"
+                class="primerInput"
+                placeholder="Buscar Producto"
+                aria-label="search"
+              />
+            </form>
+
+            <!-- ICONOS -->
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 d-flex flex-row flex-nowrap iconosResponsive"
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </form>
-          <div class="collapse navbar-collapse" id="navbarFreemanHardware">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="../pages/login.html"
-                  ><i class="bi bi-person-fill iconos"></i
-                ></a>
+                <a class="nav-link" href="../pages/login.html">
+                  <i class="bi bi-person-fill iconos"></i>
+                </a>
+              </li>
+              <div>
+                <div
+                  class="position-relative d-inline-block text-decoration-none list-unstyled"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/detalleCarrito.html">
+                      <i class="bi bi-cart-fill iconos"></i
+                    ></a>
+                  </li>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    2
+                    <span class="visually-hidden">productos en el carrito</span>
+                  </span>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">
+                  <i class="bi bi-telephone iconos"></i>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"
-                  ><i class="bi bi-cart iconos"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"
-                  ><i class="bi bi-telephone iconos"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"
-                  ><i class="bi bi-people iconos"></i
-                ></a>
+                <a class="nav-link" href="../pages/sobrenosotros.html">
+                  <i class="bi bi-people iconos"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -83,19 +104,21 @@
     <main>
       <section class="container">
         <div class="row">
-        <article class="col-md-12 col-lg-4">
-          <div class="bannerContainer mt-4">
-            <a href="../pages/detalleCategoria.html">
-              <img
-                src="../img/videovertical.png"
-                alt="bannerCategoriaPlacadeVideo"
-                class="img-fluid bannerCat"
-              />
-            </a>
-          </div>
-        </article>
-        <section class="my-4 col-md-12 col-lg-8">
-          <article class="justify-content-md-center justify-content-lg-center row row-gap-3">
+          <article class="col-md-12 col-lg-4">
+            <div class="bannerContainer mt-4">
+              <a href="../pages/detalleCategoria.html">
+                <img
+                  src="../img/videovertical.png"
+                  alt="bannerCategoriaPlacadeVideo"
+                  class="img-fluid bannerCat"
+                />
+              </a>
+            </div>
+          </article>
+          <div class="my-4 col-md-12 col-lg-8">
+          <article
+            class="justify-content-md-center justify-content-lg-center row row-gap-3"
+          >
             <div class="col-12 col-md-5 col-lg-4">
               <div class="card shadow h-100">
                 <img
@@ -110,8 +133,8 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <a href="">
-                    <button class="btnCat">Comprar</button>
+                  <a href="../pages/detalleCarrito.html">
+                    <button class="btn btn-primary">Comprar</button>
                   </a>
                 </div>
               </div>
@@ -130,8 +153,8 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <a href="">
-                    <button class="btnCat">Comprar</button>
+                  <a href="../pages/detalleCarrito.html">
+                    <button class="btn btn-primary">Comprar</button>
                   </a>
                 </div>
               </div>
@@ -151,8 +174,8 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <a href="">
-                    <button class="btnCat">Comprar</button>
+                  <a href="../pages/detalleCarrito.html">
+                    <button class="btn btn-primary">Comprar</button>
                   </a>
                 </div>
               </div>
@@ -167,12 +190,13 @@
                 <div class="card-body">
                   <h5 class="card-title">$4.120.000</h5>
                   <p class="card-text">
-                    Placa de Video Geforce Rtx 5090 32Gb Zotac Amp Extreme Infinity
+                    Placa de Video Geforce Rtx 5090 32Gb Zotac Amp Extreme
+                    Infinity
                   </p>
                 </div>
                 <div class="card-footer">
-                  <a href="">
-                    <button class="btnCat">Comprar</button>
+                  <a href="../pages/detalleCarrito.html">
+                    <button class="btn btn-primary">Comprar</button>
                   </a>
                 </div>
               </div>
@@ -187,12 +211,13 @@
                 <div class="card-body">
                   <h5 class="card-title">$1.790.000</h5>
                   <p class="card-text">
-                    Placa de Video ASUS TUF GeForce RTX 5070 Ti 16GB GDDR7 Gaming OC
+                    Placa de Video ASUS TUF GeForce RTX 5070 Ti 16GB GDDR7
+                    Gaming OC
                   </p>
                 </div>
                 <div class="card-footer">
-                  <a href="">
-                    <button class="btnCat">Comprar</button>
+                  <a href="../pages/detalleCarrito.html">
+                    <button class="btn btn-primary">Comprar</button>
                   </a>
                 </div>
               </div>
@@ -211,34 +236,45 @@
                   </p>
                 </div>
                 <div class="card-footer">
-                  <a href="">
-                    <button class="btnCat">Comprar</button>
+                  <a href="../pages/detalleCarrito.html">
+                    <button class="btn btn-primary">Comprar</button>
                   </a>
                 </div>
               </div>
             </div>
           </article>
-          </article>
           <nav aria-label="NavegacionDePaginaFreemanHardware">
             <ul class="pagination justify-content-center my-4">
               <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous">
+                <a class="page-link disabled" href="#" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
                   <span class="sr-only">Anterior</span>
                 </a>
               </li>
-              <li class="page-item active"><a class="page-link" href="./detalleCategoria.html">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item active">
+                <a class="page-link" href="./detalleCategoria.html">1</a>
+              </li>
               <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
+                <a class="page-link" href="./detalleCategoriaAuriculares.html"
+                  >2</a
+                >
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="./detalleCategoriaMouses.html">3</a>
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link"
+                  href="./detalleCategoriaAuriculares.html"
+                  aria-label="Next"
+                >
                   <span aria-hidden="true">&raquo;</span>
                   <span class="sr-only">Siguiente</span>
                 </a>
               </li>
             </ul>
           </nav>
-        </section>
+        </div>
       </section>
     </main>
     <footer class="bgFooter border-top">
