@@ -221,6 +221,12 @@ main {
   background-color: rgb(42, 23, 105);
 }
 
+.hoverGoogle {
+  &:hover {
+    box-shadow: 1px 1px 10px greenyellow;
+  }
+}
+
 .marquee-container {
   overflow: hidden;
   background-color: #f8f9fa;
