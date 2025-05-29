@@ -317,10 +317,6 @@ main {
 
 }
 
-  .colorDesProd {
-    color:#4b6cb7;
-    text-shadow: -1px 1px 1px rgb(0, 0, 0);
-  }
 
 .btn-dark:hover {
   background: linear-gradient(90deg, #23242a, #e59664);
@@ -490,6 +486,16 @@ main {
   color: #ffffff;
   box-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
+
+ .colorDesProd {
+    color:#4b6cb7;
+    text-shadow: -1px 1px 1px rgb(0, 0, 0);
+  }
+
+  .imgMetodoPago {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  }
 
 .navbarCustom {
   background-color: #0c1214;
