@@ -9,6 +9,7 @@ body {
 main {
   flex-grow: 1;
 }
+ /* para dar margen a las opciones de los botones desplegables del navbar 2*/
 .margenDerecha {
   margin-left: 100px;
 }
@@ -30,8 +31,10 @@ main {
 .integrante-card:hover {
   transform: translateY(-15px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  
 }
 
+/* tamaño para las fotos y card de la pagina quienes somos*/
 .img-container {
   display: flex;
   justify-content: center;
@@ -162,6 +165,21 @@ main {
   position: relative;
   box-shadow: 1px 1px 5px white;
 }
+/*tamaño de banner principal  */
+.bannerPrincipal{
+  width: 700px;
+  height: 350px;
+  object-fit: fill;
+  margin-top: 20px;
+  border-radius: 35px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ &:hover{
+   transform: translateY(-15px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+ }
+  }
+
 
 .marquee-track {
   display: flex;
