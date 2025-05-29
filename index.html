@@ -21,56 +21,1621 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Freeman Hardware</title>
   </head>
-  <body>
+  <body class="colorPrincipal">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logotipo</a>
+      <nav class="navbar navbar-expand-lg navbarCustom p-3">
+        <div class="container-fluid d-flex flex-wrap align-items-center">
+          <!-- LOGO -->
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/loguito de nav.jpg"
+              alt="Logo de Freeman Hardware"
+              class="logoImagen"
+            />
+          </a>
+
+          <!-- BOTON HAMBURGUESA-->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler ms-auto"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarFreemanHardware"
+            aria-controls="navbarFreemanHardware"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div
+            class="collapse navbar-collapse mt-3 mt-lg-0"
+            id="navbarFreemanHardware"
+          >
+            <!-- BARRRA DE BUSQUEDA -->
+            <form role="search" class="navdeBusqueda mb-3 mb-lg-0">
+              <input
+                type="search"
+                class="primerInput"
+                placeholder="Buscar Producto"
+                aria-label="search"
+              />
+            </form>
+
+            <!-- ICONOS -->
+            <ul
+              class="navbar-nav mb-2 mb-lg-0 d-flex flex-row flex-nowrap iconosResponsive"
+            >
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Ingresá</a>
+                <a class="nav-link" href="./pages/login.html">
+                  <i class="bi bi-person-fill iconos"></i>
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Carrito</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"
-                  >Sobre Nosotros</a
+              <div>
+                <div
+                  class="position-relative d-inline-block text-decoration-none list-unstyled"
                 >
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/detalleCarrito.html">
+                      <i class="bi bi-cart-fill iconos"></i
+                    ></a>
+                  </li>
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    2
+                    <span class="visually-hidden">productos en el carrito</span>
+                  </span>
+                </div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">
+                  <i class="bi bi-telephone iconos"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobrenosotros.html">
+                  <i class="bi bi-people iconos"></i>
+                </a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar Productos"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Marquesinas con Logos -->
+      <section>
+        <div class="container-fluid marquee-container">
+          <div class="marquee-track">
+            <img src="./img/2048px-HP_logo_2012.svg.png" alt="Logo 1" />
+            <img
+              src="./img/21d78570-0893-11ec-a57a-b79c51eac9e0.png"
+              alt="Logo 2"
+            />
+            <img src="./img/ADATA_Technology_logo_svg.png" alt="Logo 3" />
+            <img src="./img/AMD_Logo.svg.png" alt="Logo 4" />
+            <img src="./img/AsusTek-black-logo.png" alt="Logo 5" />
+            <img src="./img/Corsairlogo_new.png" alt="Logo 6" />
+            <img src="./img/Epson_logo.svg.png" alt="Logo 7" />
+            <img src="./img/EVGA_Logo.svg" alt="Logo 8" />
+            <img src="./img/Genius_imagen.png" alt="Logo 9" />
+            <img src="./img/HyperX-logo.png" alt="Logo 10" />
+            <img src="./img/2048px-HP_logo_2012.svg.png" alt="Logo 1" />
+            <img
+              src="./img/21d78570-0893-11ec-a57a-b79c51eac9e0.png"
+              alt="Logo 2"
+            />
+            <img src="./img/ADATA_Technology_logo_svg.png" alt="Logo 3" />
+            <img src="./img/AMD_Logo.svg.png" alt="Logo 4" />
+            <img src="./img/AsusTek-black-logo.png" alt="Logo 5" />
+            <img src="./img/Corsairlogo_new.png" alt="Logo 6" />
+            <img src="./img/Epson_logo.svg.png" alt="Logo 7" />
+            <img src="./img/EVGA_Logo.svg" alt="Logo 8" />
+            <img src="./img/Genius_imagen.png" alt="Logo 9" />
+            <img src="./img/HyperX-logo.png" alt="Logo 10" />
+          </div>
+        </div>
+      </section>
+      <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbar2">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="./pages/error404.html">Almacenamiento</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Auricular</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Cable</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Cargador</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Fuente pc</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Gabinete</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Joystick</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Memoria RAM</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Microprocesador</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Monitor</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Motherboard</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Notebooks</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Ofimatica</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Parlante</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Pc armada</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Perificos</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Placa de </a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Placa de video</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Refrigeracion</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Silla</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Tablets</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Varios</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Wifi</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pc armada
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark margenDerecha">
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html">Gamer intermedia </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./">Gamer principiante</a>
+                  </li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Gamer Top</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Oficina/Hogar</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html">Ver todo en Pc Armada</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Placa de video
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark margenPlaca">
+                  <li><a class="dropdown-item" href="./pages/error404.html">AMD</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Nvidia</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Placa de video</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html"
+                      >Ver todo en Placa de Video</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Notebook
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark margenNotebook">
+                  <li><a class="dropdown-item" href="./pages/error404.html">ADM</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Intel</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Notebooks</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html">Ver todo en Notebook</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Monitores
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark margenMonitores">
+                  <li><a class="dropdown-item" href="./pages/error404.html">17 pulgadas</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">19 pulgadas</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">20 pulgadas</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">22 pulgadas</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">24 pulgadas</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">27 pulgadas</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">32 pulgadas</a></li>
+                  <li><a class="dropdown-item" href="./pages/error404.html">Monitor</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/error404.html">Ver todo en monitor</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+     
+      <section>
+        <div id="carouselHardware" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselHardware"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHardware"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHardware"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselHardware"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/freeman hardware destacado.jpg"
+                class="d-block w-100 img-fluid carruselImg"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/red dragon carousel.png"
+                class="d-block w-100 img-fluid carruselImg"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/marca numero 1 hardware.png"
+                class="d-block w-100 img-fluid carruselImg"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/lo mejor para tu setup.png"
+                class="d-block w-100 img-fluid carruselImg"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselHardware"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselHardware"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+     <section>
+     <div class="container d-flex justify-content-center">      
+        <div class="d-none d-lg-block">  
+       <img class="img-fluid bannerPrincipal" src="./img/publicidad principal.png" alt="banner_publicitario_principal">
+          </div>
+      </div>
+     </section>
+    
+      <section>
+        <div class="container my-5">
+          <div class="row g-4">
+            <!-- BANNER A LA IZQUIERDA placas de video -->
+            <div class="col-md-4">
+             <a href="./pages/detalleCategoria.html">
+              <img
+                src="./img/banner publicitario placas de video.png"
+                class="img-fluid rounded banner-img"
+                alt="Nombre imagen"
+              />
+              </a>
+            </div>
+
+            <!-- CAROUSEL DE PRODUCTOS A LA DERECHA -->
+            <div class="col-md-8">
+              <div
+                id="productCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <!-- p 1 -->
+                  <div class="carousel-item active">
+                    <div class="row row-gap-4">
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card product-card h-100  ">
+                          <img
+                            src="https://http2.mlstatic.com/D_NQ_NP_677516-MLA83374064237_032025-O.webp"
+                            class="card-img-top  bg-white"
+                            alt="Producto 1"
+                          />
+
+                          <div class="card-body text-center d-flex flex-column">
+                            <h6>$460.000</h6>
+                            <p class="small">
+                              Placa De Video Gigabyte Radeon Rx 7600 Gaming Oc
+                              8gb
+                            </p>
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-primary mt-auto"
+                              data-bs-toggle="modal"
+                              >Comprar</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card product-card h-100 bg-white">
+                          <img
+                            src="https://es-store.msi.com/cdn/shop/files/1024_142a72d5-3cf8-4f9c-9fec-ab4cfbccbe61.png?v=1720563492&width=460"
+                            class="card-img-top "
+                            alt="Producto 2"
+                          />
+                          <div
+                            class="card-body text-center bg-dark d-flex flex-column"
+                          >
+                            <h6>$366.000</h6>
+                            <p class="small">
+                              Placa De Video Zotac Rtx 3050 Eco 8gb Ddr6
+                            </p>
+                            <a
+                              href="./pages/detalleProductoRTX5070.html"
+                              class="btn btn-sm btn-primary mt-auto"
+                              >Comprar</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card product-card h-100">
+                          <img
+                            src="https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-b50800q-10p-image01.jpg?itok=zSqPqrL2"
+                            class="card-img-top bg-white"
+                            alt="Producto 3"
+                          />
+                          <div class="card-body text-center d-flex flex-column">
+                            <h6>$567.000</h6>
+                            <p class="small">
+                              Placa De Video Sapphire Pulse Rx 7600 Xt 16gb D6
+                            </p>
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-primary mt-auto"
+                              data-bs-toggle="modal"
+                              >Comprar</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card product-card h-100 bg-white">
+                          <img
+                            src="https://dlcdnwebimgs.asus.com/gain/02f94487-3af2-48d1-bb5c-22130db4aefb/"
+                            class="card-img-top"
+                            alt="Producto 4"
+                          />
+                          <div
+                            class="card-body text-center bg-dark d-flex flex-column"
+                          >
+                            <h6>$570.000</h6>
+                            <p class="small">
+                              Placa De Video Gigabyte Radeon Rx 7600xt Gaming Oc
+                              16gb
+                            </p>
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-primary mt-auto"
+                              data-bs-toggle="modal"
+                              >Comprar</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- p 2 -->
+                  <div class="carousel-item">
+                    <div class="row row-gap-4">
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card product-card h-100 bg-white">
+                          <img
+                            src="https://mlx.com.ar/wp-content/uploads/Radeon-RX-7600-Steel-Legend-8GB-OCL1-1024x853.png"
+                            class="card-img-top"
+                            alt="Producto 4"
+                          />
+                          <div
+                            class="card-body text-center bg-dark d-flex flex-column"
+                          >
+                            <h6>$696.000</h6>
+                            <p class="small">
+                              Placa De Video Gigabyte Radeon Rx 7700 Xt Gaming
+                              Oc 12gb
+                            </p>
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-primary mt-auto"
+                              data-bs-toggle="modal"
+                              >Comprar</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card product-card h-100">
+                          <img
+                            src="https://http2.mlstatic.com/D_NQ_NP_677516-MLA83374064237_032025-O.webp"
+                            class="card-img-top bg-white"
+                            alt="Producto 4"
+                          />
+                          <div class="card-body text-center d-flex flex-column ">
+                            <h6>$150.000</h6>
+                            <p class="small">
+                              Placa de video AMD Sentey Radeon RX 550 4GB GDRR5
+                              6000mhz
+                            </p>
+                            <a
+                              href="./pages/detalleProductoRTX5070.html"
+                              class="btn btn-sm btn-primary mt-auto"
+                              data-bs-toggle="modal"
+                              >Comprar</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card product-card h-100 bg-white">
+                          <img
+                            src="https://es-store.msi.com/cdn/shop/files/1024_142a72d5-3cf8-4f9c-9fec-ab4cfbccbe61.png?v=1720563492&width=460"
+                            class="card-img-top bg-white"
+                            alt="Producto 4"
+                          />
+                          <div
+                            class="card-body text-center bg-dark d-flex flex-column"
+                          >
+                            <h6>$80.000</h6>
+                            <p class="small">
+                              Placa De Video Gigabyte Radeon Rx 7600 Gaming Oc
+                              8gb
+                            </p>
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-primary mt-auto"
+                              data-bs-toggle="modal"
+                              >Comprar</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card product-card h-100">
+                          <img
+                            src="https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-b50800q-10p-image01.jpg?itok=zSqPqrL2"
+                            class="card-img-top bg-white"
+                            alt="Producto 4"
+                          />
+                          <div class="card-body text-center d-flex flex-column">
+                            <h6>$96.000</h6>
+                            <p class="small">
+                              Placa De Video Gigabyte Radeon Rx 7600xt Gaming Oc
+                              16gb
+                            </p>
+                            <a
+                              href="#"
+                              class="btn btn-sm btn-primary mt-auto"
+                              data-bs-toggle="modal"
+                              >Comprar</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Botones -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#productCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#productCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container my-5">
+        <div class="row g-4">
+          <!-- BANNER A LA IZQUIERDA Auriculares -->
+          <div class="col-md-4">
+            <a href="./pages/detalleCategoriaAuriculares.html">
+            <img
+              src="./img/banner publicitario auriculares.png"
+              class="img-fluid rounded banner-img"
+              alt="Banner promocional"
+            />
+            </a>
+          </div>
+
+          <!-- CAROUSEL DE PRODUCTOS A LA DERECHA -->
+          <div class="col-md-8">
+            <div
+              id="productAuriculares"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- SLIDE 1 -->
+                <section class="carousel-item active">
+                  <div class="row justify-content-center row-gap-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card">
+                        <img
+                          src="https://http2.mlstatic.com/D_Q_NP_854699-MLU70602019669_072023-O.webp"
+                          class="card-img-top bg-white"
+                          alt="Producto 1"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$10.000</h6>
+                          <p class="small">Auriculares color blanco</p>
+                          <a href="#" class="btn btn-primary mt-auto"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card bg-white">
+                        <img
+                          src="https://www.gamerspoint.com.ar/wp-content/uploads/AURICULAR-GENESIS-NEON-600-RGB.png"
+                          class="card-img-top"
+                          alt="Producto 2"
+                        />
+                        <div
+                          class="card-body text-center bg-dark d-flex flex-column"
+                        >
+                          <h6>$22.000</h6>
+                          <p class="small">Auriculares gamer lg con luces</p>
+                          <a href="./pages/detalleProductoSteelSeriesArctis.html" class="btn btn-primary mt-auto"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card bg-white">
+                        <img
+                          src="https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Gaming-Headsets/CA-9011204-AP/Gallery/VOID_RGB_ELITE_USB_WHITE_01.webp"
+                          class="card-img-top"
+                          alt="Producto 3"
+                        />
+                        <div
+                          class="card-body text-center bg-dark d-flex flex-column"
+                        >
+                          <h6>$30.000</h6>
+                          <p class="small">Auriculares red dragon r-4521</p>
+                          <a href="#" class="btn btn-primary mt-auto"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card">
+                        <img
+                          src="https://http2.mlstatic.com/D_NQ_NP_722168-CBT83103153269_032025-O.webp"
+                          class="card-img-top bg-white"
+                          alt="Producto 4"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$50.000</h6>
+                          <p class="small">Auriculares gamer logitech g-541</p>
+                          <a href="#" class="btn btn-primary mt-auto"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                  <div class="row justify-content-center row-gap-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card">
+                        <img
+                          src="https://http2.mlstatic.com/D_NQ_NP_717048-MLA79298701726_092024-O.webp"
+                          class="card-img-top bg-white"
+                          alt="Producto 5"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$45.000</h6>
+                          <p class="small">
+                            Auricular Gamer Gx Genius Hs G710v
+                          </p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card">
+                        <img
+                          src="https://acdn-us.mitiendanube.com/stores/859/131/products/_mg_28411-fec72215c8eee2d3ee16491757576760-1024-1024.jpg"
+                          class="card-img-top bg-white"
+                          alt="Producto 6"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$18.000</h6>
+                          <p class="small">Auriculares red dragon con cable</p>
+                          <a href="./pages/detalleProductoSteelSeriesArctis.html" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card">
+                        <img
+                          src="https://http2.mlstatic.com/D_Q_NP_837241-MLA79258088254_092024-O.webp"
+                          class="card-img-top bg-white"
+                          alt="Producto 7"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$32.000</h6>
+                          <p class="small">Auriculares color rosa</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1PfTX-U1gZUBF_4twr6eJN_HHG0XyBuYJdQ&s"
+                          class="card-img-top bg-white"
+                          alt="Producto 8"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$70.000</h6>
+                          <p class="small">Auriculares Noblex con microfono</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Botones -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#productAuriculares"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#productAuriculares"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container my-5">
+        <div class="row g-4">
+          <!-- BANNER A LA IZQUIERDA MOUSE -->
+          <div class="col-md-4">
+            <a href="./pages/detalleCategoriaMouses.html">
+            <img
+              src="./img/banner publicitario mouse gamer.png"
+              class="img-fluid rounded banner-img"
+              alt="Banner promocional"
+            />
+            </a>
+          </div>
+
+          <!-- CAROUSEL DE PRODUCTOS A LA DERECHA -->
+          <div class="col-md-8">
+            <div
+              id="productMouse"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- SLIDE 1 -->
+                <section class="carousel-item active">
+                  <div class="row row-gap-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card bg-white">
+                        <img
+                          src="https://png.pngtree.com/png-clipart/20240520/original/pngtree-wireless-gaming-mouse-png-image_15140813.png"
+                          class="card-img-top"
+                          alt="Producto 1"
+                        />
+                        <div
+                          class="card-body text-center bg-dark d-flex flex-column"
+                        >
+                          <h6>$35.000</h6>
+                          <p class="small">Mouse Gamer inalambrico Genius</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card bg-white">
+                        <img
+                          src="https://img.freepik.com/free-psd/wireless-computer-gaming-mouse-icon-isolated-3d-render-illustration_439185-12646.jpg?semt=ais_hybrid&w=740"
+                          class="card-img-top"
+                          alt="Producto 2"
+                        />
+                        <div
+                          class="card-body text-center bg-dark d-flex flex-column"
+                        >
+                          <h6>$22.000</h6>
+                          <p class="small">Mouse gamer logitech R-452</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card bg-white">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt72eYSUvdbKQBeXLC8EY5hmwsLGomdr4fig&s"
+                          class="card-img-top"
+                          alt="Producto 3"
+                        />
+                        <div
+                          class="card-body text-center bg-dark d-flex flex-column"
+                        >
+                          <h6>$30.000</h6>
+                          <p class="small">Mouse gamer con cable G-2142</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrd_JTbdYKtdBcMkqscr0OrF-49UP7d3ug6g&s"
+                          class="card-img-top bg-white"
+                          alt="Producto 4"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$50.000</h6>
+                          <p class="small">Mouse gamer Red dragon F-352</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                  <div class="row row-gap-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card bg-white">
+                        <img
+                          src="https://redragon.es/content/uploads/2024/07/KING-PRO-1K-BLACK-M916.png"
+                          class="card-img-top"
+                          alt="Producto 5"
+                        />
+                        <div
+                          class="card-body text-center bg-dark d-flex flex-column"
+                        >
+                          <h6>$45.000</h6>
+                          <p class="small">Mouse gamer red dragon T-524</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card">
+                        <img
+                          src="https://www.invidcomputers.com/images/000000000040830011308Mouse-Genius-Gamer-X-G200-USB-Negro-tab-1.png"
+                          class="card-img-top bg-white"
+                          alt="Producto 6"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$18.000</h6>
+                          <p class="small">Mouse gamer Genius Y-691</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card">
+                        <img
+                          src="https://pronet.uy/wp-content/uploads/260127-pronet.png"
+                          class="card-img-top bg-white"
+                          alt="Producto 7"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$32.000</h6>
+                          <p class="small">
+                            Mouse gamer Genius con luces P-9874
+                          </p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                      <div class="card h-100 product-card bg-white">
+                        <img
+                          src="https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g502-lightspeed-gaming-mouse/g502-lightspeed-gallery-1.png?v=1"
+                          class="card-img-top"
+                          alt="Producto 8"
+                        />
+                        <div
+                          class="card-body text-center bg-dark d-flex flex-column"
+                        >
+                          <h6>$70.000</h6>
+                          <p class="small">Mouse Genius gamer 2.0</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Botones -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#productMouse"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#productMouse"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container my-5">
+          <h2 class="text-center mb-4">Últimos ingresos</h2>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <!-- Primera diapositiva -->
+              <div class="carousel-item active">
+                <div class="row row-gap-4 justify-content-center">
+                  <!-- Producto 1 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="./img/Cable Ethernet Red 20mts Cat 6E Seisa XJL-20M.jpg"
+                        class="card-img-top img-fluid h-100"
+                        alt="Cable Ethernet 20mts"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$12.000</h6>
+                        <h5 class="card-title">Cable Ethernet</h5>
+                        <p class="card-text">Red 20mts Cat 6E Seisa XJL-20M</p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 2 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="./img/Fuente PC Generica Switching DX-ATX 550 550W.jpg"
+                        class="card-img-top img-fluid h-100"
+                        alt="Silla Gamer Marvo"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$147.000</h6>
+                        <h5 class="card-title">Silla Gamer Marvo Scorpion</h5>
+                        <p class="card-text">CH-106 Negro y Roja</p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 3 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://http2.mlstatic.com/D_NQ_NP_734988-MLA53108778467_122022-O.webp"
+                        class="card-img-top img-fluid"
+                        alt="Fuente PC Generica"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$70.000</h6>
+                        <h5 class="card-title">Fuente PC Genérica</h5>
+                        <p class="card-text">Switching DX-ATX 550 550W</p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 4 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_28410_Memoria_Team_DDR4_16GB_2666MHz_T-Force_Delta_RGB_Black_CL16_441c03ab-grn.jpg"
+                        class="card-img-top img-fluid"
+                        alt="Memoria Ram DDR4"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$12.000</h6>
+                        <h5 class="card-title">Memoria Ram DDR4</h5>
+                        <p class="card-text">
+                          16GB Netac Shadow White C16 3200MHz
+                        </p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 5 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_42479_Monitor_Gamer_ASUS_VY229HF-J_22__FHD_IPS_100Hz_446aa7a4-grn.jpg"
+                        class="card-img-top carousel-img-placas"
+                        alt="Monitor Viewsonic 22"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$152.990</h6>
+                        <h5 class="card-title">Monitor 22 Viewsonic</h5>
+                        <p class="card-text">IPS 100Hz VA 2214-H</p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 6 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_41253_Monitor_Gamer_LG_Ultragear_24GS60F-B_24__IPS_FHD_1920_1080_180Hz_G-SYNC_FreeSync_1ms__GtG__5dfb2200-grn.jpg"
+                        class="card-img-top carousel-img-placas"
+                        alt="Monitor Asus 24"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$189.000</h6>
+                        <h5 class="card-title">Monitor 24 Asus</h5>
+                        <p class="card-text">As Va24ehf Ips 100hz 1ms</p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Segunda diapositiva -->
+              <div class="carousel-item">
+                <div class="row row-gap-4 justify-content-center">
+                  <!-- Producto 7 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_40295_Monitor_Gamer_ViewSonic_VX2428A_24__1080p_IPS_180Hz_FreeSync_Premium_3f8b9818-grn.jpg"
+                        class="card-img-top carousel-img-placas"
+                        alt="Monitor LG 24"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$175.500</h6>
+                        <h5 class="card-title">Monitor LG</h5>
+                        <p class="card-text">Led 24 Borderless 24ms500</p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 8 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_41727_Notebook_Gamer_MSI_Cyborg_14_A13VF-018US_14__16_10_FHD__144Hz_i7-13620H_RTX4060_16GB_DDR5_512SSD_NVMe_Win11_bfda0820-grn.jpg"
+                        class="card-img-top carousel-img-placas"
+                        alt="Notebook MSI Cyborg"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$1.230.200</h6>
+                        <h5 class="card-title">Notebook MSI Cyborg</h5>
+                        <p class="card-text">
+                          A13UDX 15.6" I5-13420H, 16GB, 512GB, RTX 3050, Win11
+                        </p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 9 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_43466_Notebook_Asus_TUF_A15_FA506NF-HN008W_15.6__R5-7535HS_16GB_SSD_512GB_RTX2050_FHD_IPS_144Hz_Win11_Graphite_Black_197d40b5-grn.jpg"
+                        class="card-img-top carousel-img-placas"
+                        alt="Notebook MSI Katana"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$3.724.584</h6>
+                        <h5 class="card-title">Notebook MSI Katana</h5>
+                        <p class="card-text">
+                          B8VF A15, Ryzen 7, 16GB, 512GB, RTX 4060, Win11
+                        </p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 10 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_44049_Notebook_HP_Victus_15-FA0033_15.6__i5-12450H_8GB_SSD_512GB_RTX3050_FHD_144Hz_Win11_5782adea-grn.jpg"
+                        class="card-img-top carousel-img-placas"
+                        alt="Notebook MSI Summit"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$2.808.055</h6>
+                        <h5 class="card-title">Notebook MSI Summit 13</h5>
+                        <p class="card-text">
+                          Core Ultra 7, 32GB, 1TB, Intel Arc, Win11
+                        </p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 11 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_9775_Mouse_Pad_Corsair_MM300_Extended_XL_930x300mm_83fcfde0-grn.jpg"
+                        class="card-img-top carousel-img-placas"
+                        alt="Pad Mouse Trust"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$22.230</h6>
+                        <h5 class="card-title">Periféricos Pad Mouse</h5>
+                        <p class="card-text">
+                          Trust Benya Desk Pad 90x43 XXL Blue
+                        </p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Producto 12 -->
+                  <div
+                    class="margenCard col-12 col-sm-6 col-md-4 col-lg-2 mb-4"
+                  >
+                    <div class="card h-100">
+                      <img
+                        src="https://imagenes.compragamer.com/productos/compragamer_Imganen_general_35118_Placa_de_Video_ASUS_Dual_GeForce_RTX_3060_12GB_GDDR6_OC_V2_db8ba770-grn.jpg"
+                        class="card-img-top carousel-img-placas"
+                        alt="Placa de Video Gigabyte RTX 5060Ti"
+                      />
+                      <div class="card-body d-flex flex-column">
+                        <h6>$1.040.691</h6>
+                        <h5 class="card-title">Placa De Video Gigabyte</h5>
+                        <p class="card-text">RTX 5060Ti Eagle 16GB</p>
+                        <a
+                          href="#"
+                          class="btn btn-sm btn-primary text-white mt-auto"
+                          >Comprar</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controles del Carrusel -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="text-center fw-semibold">Lo mas buscado</h2>
+      <section class="container">
+        <div class="my-5">
+          <div class="row g-4">
+            <div
+              id="lomasBuscado"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- PRIMER SLIDE -->
+                <div class="carousel-item active">
+                  <div class="row row-gap-4">
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel bg-white">
+                        <img
+                          src="https://es-store.msi.com/cdn/shop/files/1024_142a72d5-3cf8-4f9c-9fec-ab4cfbccbe61.png?v=1720563492&width=460"
+                          alt="MSI GeForce RTX 3050 Ventus 2X XS OC"
+                        />
+                        <div
+                          class="card-body text-center bg-dark d-flex flex-column"
+                        >
+                          <h6>$350.000</h6>
+                          <p class="small">MSI GeForce RTX 3050 Ventus</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel ">
+                        <img class="bg-white"
+                          src="https://www.invidcomputers.com/images/000000000040830011308Mouse-Genius-Gamer-X-G200-USB-Negro-tab-1.png"
+                          alt="ratón gamer Genius X-G200"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$14.000</h6>
+                          <p class="small">ratón gamer Genius X-G200</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel">
+                        <img class="bg-white"
+                          src="https://http2.mlstatic.com/D_Q_NP_837241-MLA79258088254_092024-O.webp"
+                          alt="Razer Kraken Kitty Edition"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$250.000</h6>
+                          <p class="small">
+                            Auriculares Razer Kraken Kitty Edition
+                          </p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel">
+                        <img class="bg-white"
+                          src="https://www.zotac.com/download/files/styles/w1024/public/product_gallery/graphics_cards/zt-b50800q-10p-image01.jpg?itok=zSqPqrL2"
+                          alt="tarjeta gráfica Zotac GAMING GeForce RTX 5080 Solid OC"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$2.169.570</h6>
+                          <p class="small">Zotac GAMING GeForce RTX 5080</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel">
+                        <img class="bg-white"
+                          src="https://http2.mlstatic.com/D_NQ_NP_677516-MLA83374064237_032025-O.webp"
+                          alt="Zotac GAMING GeForce RTX 5090 AMP Extreme INFINITY"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$3.800.000</h6>
+                          <p class="small">GAMING GeForce RTX5090AMP</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel">
+                        <img class="bg-white"
+                          src="https://http2.mlstatic.com/D_NQ_NP_949839-MLU78150699879_082024-O.webp"
+                          alt="El Thermaltake TH120 ARGB"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$196.000</h6>
+                          <p class="small">El Thermaltake TH120 ARGB</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- SEGUNDO SLIDE -->
+                <div class="carousel-item">
+                  <div class="row row-gap-4">
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel">
+                        <img class="bg-white"
+                          src="https://http2.mlstatic.com/D_NQ_NP_734988-MLA53108778467_122022-O.webp"
+                          alt="fuente de alimentación Aureox ARXGP 500W"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$62.000</h6>
+                          <p class="small">Fuente de alimentacion Aureox</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel">
+                        <img class="bg-white"
+                          src="https://noblex.com.ar/media/wysiwyg/NXSM2200_Frente.jpg"
+                          alt="Monitor Noblex LED Full HD"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$170.000</h6>
+                          <p class="small">Monitor Noblex LED Full HD</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel bg-white">
+                        <img class="bg-white"
+                          src="https://asset.msi.com/resize/image/global/product/product_1_20200818100208_5f3b36a02389e.png62405b38c58fe0f07fcef2367d8a9ba1/380.png"
+                          alt="placa madre MSI B550M-A PRO"
+                        />
+                        <div
+                          class="card-body text-center bg-dark d-flex flex-column"
+                        >
+                          <h6>$124.000</h6>
+                          <p class="small">placa madre MSI B550M-A PRO</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel">
+                        <img class="bg-white"
+                          src="https://http2.mlstatic.com/D_Q_NP_651897-CBT80138159979_102024-O.webp"
+                          alt=" Thermaltake CT120 EX ARGB"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$130.000</h6>
+                          <p class="small">Thermaltake CT120 EX ARGB</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card  h-100 product-card cardCarousel">
+                        <img class="bg-white"
+                          src="https://pronet.uy/wp-content/uploads/260127-pronet.png"
+                          alt="Genius Scorpion M715 RGB"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$17.000</h6>
+                          <p class="small">Genius Scorpion M715 RGB</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                      <div class="card product-card cardCarousel">
+                        <img class="bg-white"
+                          src="https://acdn-us.mitiendanube.com/stores/859/131/products/_mg_28411-fec72215c8eee2d3ee16491757576760-1024-1024.jpg"
+                          alt="Redragon Ares H120"
+                        />
+                        <div class="card-body text-center d-flex flex-column">
+                          <h6>$17.500</h6>
+                          <p class="small">Auriculares Redragon Ares H120</p>
+                          <a href="#" class="btn mt-auto btn-primary"
+                            >Comprar</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Botones -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#lomasBuscado"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#lomasBuscado"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bgFooter border-top">
+      <section class="container p-4">
+        <article class="row row-gap-4 justify-content-md-end">
+          <div class="col-12 col-md-4 col-lg-3">
+            <a href="./index.html">
+              <img
+                src="./img/logofreemanhardware.png"
+                alt="logotipofreemanHardware"
+                class="imgLogoFooter"
+              />
+            </a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <h5>Información</h5>
+            <ul class="list-unstyled">
+              <a
+                href="./pages/sobrenosotros.html"
+                class="text-decoration-none text-light-emphasis"
+                ><li class="textFooter">Sobre Nosotros</li></a
+              >
+              <a
+                href="../pages/contacto.html"
+                class="text-decoration-none text-light-emphasis"
+                ><li class="textFooter">Contacto</li></a
+              >
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            <h5>Redes Sociales</h5>
+            <div class="d-flex d-inline align-items-baseline gap-4">
+              <div>
+                <a href="./pages/error404.html"
+                  ><i class="bi bi-facebook fs-3 logoFooterFB"></i>
+                </a>
+              </div>
+              <div>
+                <a href="./pages/error404.html">
+                  <i class="bi bi-instagram fs-3 logoFooterIG"></i>
+                </a>
+              </div>
+              <div>
+                <a href="./pages/error404.html">
+                  <i class="bi bi-twitter-x fs-3 logoFooterX"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">
+            ¿Dónde Estamos?
+            <p class="mt-3">
+              Dirección: Gral. José María Paz 576, T4000 San Miguel de Tucumán,
+              Tucumán
+            </p>
+            <div class="d-flex d-inline gap-2">
+              <a href="./pages/error404.html"
+                ><i class="bi bi-whatsapp logoFooterWA"></i
+              ></a>
+              <p>0381 578-3030</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="marquee gap-5">
+        <ul class="marquee__content font-monospace">
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+        </ul>
+        <ul aria-hidden="true" class="marquee__content font-monospace">
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+          <li>&copy; 2025 Freeman Hardware - Todos los derechos reservados.</li>
+        </ul>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"

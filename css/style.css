@@ -1,0 +1,618 @@
+/* font del sitio */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Han+Sans&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Playwrite+DK+Loopet:wght@100..400&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+
+/* Bajar Footer */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  flex-grow: 1;
+}
+ /* para dar margen a las opciones de los botones desplegables del navbar 2*/
+.margenDerecha {
+  margin-left: 100px;
+}
+.margenPlaca {
+  margin-left: 200px;
+}
+.margenNotebook {
+  margin-left: 300px;
+}
+.margenMonitores {
+  margin-left: 450px;
+}
+.integrante-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+.integrante-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  
+}
+
+/* tamaño para las fotos y card de la pagina quienes somos*/
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.img-container img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #dfe4ea;
+  box-shadow: 0 4px 10px rgba(92, 76, 76, 0.1);
+}
+
+ .cardQuienes {
+  background: linear-gradient(145deg, #1d045b, #1f0441); /* Degradado oscuro */
+  color: #ffffff; /* Letras claras */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* Brillo neón suave */
+  transition: all 0.3s ease-in-out;
+}
+
+.cardQuienes:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.3); /* Más brillo al pasar el mouse */
+  transform: translateY(-5px);
+}
+
+/* Sombra en la imagen dentro de la tarjeta */
+.img-container img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(71, 152, 152, 0.4);
+}
+
+/* Textos internos */
+.cardQuienes .card-title,
+.cardQuienes .card-subtitle,
+.cardQuienes .card-text,
+.cardQuienes blockquote,
+.cardQuienes small {
+  color: #ffffff;
+  text-shadow: 0 0 3px #00ffff;
+}
+
+/* Botones */
+.cardQuienes .btn-outline-primary {
+  border-color: #00ffff;
+  color: #00ffff;
+}
+
+.cardQuienes .btn-outline-primary:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.cardQuienes .btn-outline-dark {
+  border-color: #9b7878;
+  color: #dfd3d3;
+}
+
+.cardQuienes .btn-outline-dark:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.cardQuienes .btn-outline-primary:focus,
+.cardQuienes .btn-outline-dark:focus {
+  outline: none;
+  box-shadow: 0 0 10px #000; /* brillo oscuro alrededor */
+  background-color: #111;    /* fondo oscuro en focus */
+  color: #00ffff;            /* texto neón */
+  border-color: #000;
+}
+
+
+/* color principal del index */
+.colorPrincipal {
+  background: radial-gradient(ellipse at top, #002351, transparent),
+    radial-gradient(ellipse at bottom, #00219c, transparent);
+}
+
+@media (max-width: 576px) {
+  .img-container {
+    height: 180px;
+  }
+}
+
+.bgFooter {
+  background-color: #181818;
+  color: white;
+  border-radius: 0 30px 0 0;
+}
+
+.imgLogoFooter {
+  height: 100px;
+}
+
+.logoFooterFB {
+  color: white;
+  transition: 600ms ease;
+}
+
+.logoFooterIG {
+  color: white;
+  transition: 600ms ease;
+}
+
+.logoFooterX {
+  color: white;
+  transition: 600ms ease;
+}
+
+.logoFooterWA {
+  color: white;
+  transition: 600ms ease;
+}
+
+.logoFooterIG:hover {
+  color: rgb(255, 0, 55);
+  text-shadow: 1px 1px 10px rgb(255, 0, 55);
+}
+
+.logoFooterFB:hover {
+  color: rgb(0, 14, 212);
+  text-shadow: 1px 1px 10px rgb(0, 14, 212);
+}
+
+.logoFooterX:hover {
+  color: rgb(104, 104, 104);
+  text-shadow: 1px 1px 10px rgb(104, 104, 104);
+}
+
+.logoFooterWA:hover {
+  color: rgb(0, 212, 71);
+  text-shadow: 1px 1px 10px rgb(0, 212, 71);
+}
+
+.textFooter:hover {
+  text-shadow: 1px 1px 10px white;
+}
+
+/* Marquesina estilos */
+.marquee {
+  --gap: 100px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 20s linear infinite;
+}
+
+/* Animacion de marquesina de derecha a izquierda*/
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.imagenFondo {
+  background-image: url(https://img.freepik.com/fotos-premium/fondo-degradado-azul-morado-copie-espacio-ilustracion_195501-2050.jpg);
+}
+
+.login {
+  background-color: rgb(42, 23, 105);
+}
+
+.hoverGoogle {
+  &:hover {
+    box-shadow: 1px 1px 10px greenyellow;
+  }
+}
+ /* Estilos marquesina de logos */
+.marquee-container {
+  overflow: hidden;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  position: relative;
+  box-shadow: 1px 1px 5px white;
+}
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-track img {
+  height: 40px;
+  margin: 0 40px;
+}
+
+/* Animacion Marquesina Logos de derecha a izquierda */
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*tamaño de banner principal  */
+.bannerPrincipal{
+  width: 700px;
+  height: 350px;
+  object-fit: fill;
+  margin-top: 20px;
+  border-radius: 35px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+ &:hover{
+   transform: translateY(-15px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+ }
+  }
+
+.imagenError {
+  height: 350px;
+  width: 400px;
+}
+.erroR {
+  background: linear-gradient(
+    200deg,
+    rgb(69, 9, 69),
+    rgb(9, 12, 90),
+    rgb(227, 8, 8),
+    rgb(0, 122, 166)
+  );
+}
+
+.texto {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.encabezadoForm {
+  font-family: "Orbitron", sans-serif;
+}
+.form-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.form-control {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.form-control:focus {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(255, 165, 0, 0.7),
+    0 0 10px 4px rgba(75, 44, 32, 0.6);
+}
+.btn-primary {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  border: none;
+  transition: 300ms ease;
+
+  &:hover {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: -1px 1px 10px white;
+  }
+
+}
+
+
+.btn-dark:hover {
+  background: linear-gradient(90deg, #23242a, #e59664);
+}
+
+.form-label,
+.form-check-label {
+  color: #ddd;
+}
+
+
+.product-card img {
+  height: 150px;
+  object-fit: cover;
+}
+.banner-img {
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carruselImg {
+  height: auto;
+  background-size: cover;
+}
+
+/* banners categorias */
+
+.bannerContainer {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.bannerCat {
+  height: 600px;
+  width: 700px;
+  object-fit: fill;
+  object-position: 0% 30%;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: transform 600ms ease, filter 600ms ease;
+}
+
+.bannerCat:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* botones detalle categorias */
+
+.btnCat {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: orangered;
+  font-family: monospace;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px black;
+  transition: 600ms;
+
+  &:hover {
+    color: black;
+    text-shadow: 1px 1px 2px white;
+  }
+}
+
+/* boton paginacion categorias */
+
+.btnPagCat {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  color: white;
+
+  &:hover {
+    text-shadow: 1px 1px 2px white;
+  }
+}
+
+.btnPagCatActive {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  color: white;
+  text-shadow: 1px 1px 5px white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.pagination .page-link {
+  background-color: #1a1a1a; /* Fondo del botón */
+  color: #fff; /* Texto del botón */
+  border-color: #333; /* Borde */
+}
+
+.pagination .page-link:hover {
+  background-color: #182848;
+  color: #4b6cb7;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #4b6cb7; /* Activo (actual) */
+  border-color: #182848;
+  color: #fff;
+}
+
+.imgCarrito {
+  max-width: 200px;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+.btnCarrito {
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: orangered;
+  font-family: monospace;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px black;
+  transition: 600ms;
+
+  &:hover {
+    background-color: grey;
+    color: black;
+    text-shadow: 1px 1px 5px white;
+  }
+}
+
+.shadowCarrito {
+  border: 1px solid #182848;
+      box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.8);
+}
+
+.btnBorrar {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: bolder;
+  height: 30px;
+  width: 40px;
+  overflow: hidden;
+
+  &:hover {
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px white
+  }
+}
+
+.cajaComentarios {
+  background-color: #00356e;
+  border: 5px solid #63a0fd;
+  border-left: 5px solid #0d6efd;
+  border-right: 5px solid #0d6efd;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+
+}
+
+.imgDetalleProducto {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.borderDivLine {
+  border: 1px solid;
+  color: #ffffff;
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+ .colorDesProd {
+    color:#4b6cb7;
+    text-shadow: -1px 1px 1px rgb(0, 0, 0);
+  }
+
+  .imgMetodoPago {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+  }
+
+.navbarCustom {
+  background-color: #0c1214;
+}
+.logoImagen {
+  width: 70px;
+  object-fit: contain;
+}
+
+.navdeBusqueda {
+  width: 90%;
+}
+
+.primerInput {
+  background-color: #fff;
+  border: 4px solid #0c1214;
+  width: 95%;
+  transition: 1s;
+  border-radius: 10px;
+  padding: 5px;
+  color: #0c1214;
+  outline: none;
+}
+
+.primerInput:hover {
+  border: 4px solid #d7420d;
+}
+
+.iconos {
+  font-size: 25px;
+  margin: 5px;
+  color: #fff;
+}
+
+/*Tablet */
+@media (max-width: 900px) {
+  .carruselImg {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .imgCatCard {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .bannerCat {
+  height: 400px;
+  width: 700px;
+  object-fit: cover;
+  object-position: 70% 18%;
+}
+}
+
+/* dispositivos lg*/
+
+@media (max-width: 1500px) {
+  .carruselImg {
+    height: 400px;
+  }
+
+  .imgCatCard {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .navdeBusqueda {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .primerInput {
+    width: 100%;
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+
+  .iconosResponsive {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+/*dispositivos celulares*/
+
+@media (max-width: 600px) {
+  .carruselImg {
+    height: 200px;
+    object-fit: cover;
+  }
+  .product-card img {
+  height: 150px;
+  object-fit: contain;
+}
+
+.bannerCat {
+  height: 600px;
+  width: 450px;
+  object-fit: fill;
+  object-position: 70% 21%;
+}
+
+}
+
+
+.logoImagen {
+  width: 90px;
+  object-fit: contain;
+}
