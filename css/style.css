@@ -54,10 +54,7 @@ main {
   border: 3px solid #dfe4ea;
   box-shadow: 0 4px 10px rgba(92, 76, 76, 0.1);
 }
-/*
-.cardQuienes {
-  width: 20rem;
-} */
+
  .cardQuienes {
   background: linear-gradient(145deg, #1d045b, #1f0441); /* Degradado oscuro */
   color: #ffffff; /* Letras claras */
