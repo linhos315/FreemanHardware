@@ -316,7 +316,12 @@ main {
   }
 
 }
-w
+
+  .colorDesProd {
+    color:#4b6cb7;
+    text-shadow: -1px 1px 1px rgb(0, 0, 0);
+  }
+
 .btn-dark:hover {
   background: linear-gradient(90deg, #23242a, #e59664);
 }
