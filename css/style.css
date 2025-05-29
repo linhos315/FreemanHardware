@@ -185,7 +185,7 @@ main {
   text-shadow: 1px 1px 10px white;
 }
 
-/* Marquee styles */
+/* Marquesina estilos */
 .marquee {
   --gap: 100px;
   position: relative;
@@ -201,8 +201,10 @@ main {
   justify-content: space-around;
   gap: var(--gap);
   min-width: 100%;
-  animation: scroll 10s linear infinite;
+  animation: scroll 20s linear infinite;
 }
+
+/* Animacion de marquesina de derecha a izquierda*/
 
 @keyframes scroll {
   from {
@@ -226,7 +228,7 @@ main {
     box-shadow: 1px 1px 10px greenyellow;
   }
 }
-
+ /* Estilos marquesina de logos */
 .marquee-container {
   overflow: hidden;
   background-color: #f8f9fa;
@@ -234,6 +236,29 @@ main {
   position: relative;
   box-shadow: 1px 1px 5px white;
 }
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-track img {
+  height: 40px;
+  margin: 0 40px;
+}
+
+/* Animacion Marquesina Logos de derecha a izquierda */
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /*tamaño de banner principal  */
 .bannerPrincipal{
   width: 700px;
@@ -249,27 +274,6 @@ main {
  }
   }
 
-
-.marquee-track {
-  display: flex;
-  width: fit-content;
-  animation: scroll-left 10s linear infinite;
-}
-
-.marquee-track img {
-  height: 40px;
-  margin: 0 40px;
-}
-.bodyColorRegistro {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(180deg, #532d15, #b64009, #0f172a);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
-  font-family: "Orbitron", sans-serif;
-}
 .imagenError {
   height: 350px;
   width: 400px;
@@ -332,14 +336,8 @@ main {
 .form-check-label {
   color: #ddd;
 }
-@keyframes scroll-left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
+
+
 .product-card img {
   height: 150px;
   object-fit: cover;
